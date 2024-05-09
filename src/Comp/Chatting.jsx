@@ -4,16 +4,9 @@ import { BsEmojiLaughing } from "react-icons/bs";
 import { AiFillAudio } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-// import { getDatabase, onValue, push, ref, set } from "firebase/database";
 import { useEffect } from "react";
 import { GrGallery } from "react-icons/gr";
 
-// import {
-//   getStorage,
-//   ref as sref,
-//   uploadBytesResumable,
-//   getDownloadURL,
-// } from "firebase/storage";
 import { getDatabase, onValue, push, ref, set } from "firebase/database";
 import {
   getDownloadURL,
@@ -82,7 +75,7 @@ const Chatting = () => {
       });
       setMessageList(arr);
     });
-  }, [db, data.uid, activeChatSlice.active.id]);
+  }, [db, data.uid, activeChatSlice.active?.id]);
 
   // Data gula nilam end
 
@@ -142,7 +135,7 @@ const Chatting = () => {
         </div>
         {/* identity end*/}
 
-        {activeChatSlice.active.status == "single" ? (
+        {activeChatSlice.active?.status == "single" ? (
           messageList.map((item, i) => {
             return item.whoSendId === data.uid ? (
               item.msg ? (

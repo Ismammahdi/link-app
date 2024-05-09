@@ -106,18 +106,18 @@ const UserList = () => {
                   <div className="flex gap-5">
                     <div className="img w-[50px] h-[50px] bg-green-500 rounded-full">
                       {/* <img src="" alt="" /> */}
-                      <ProfilePicture imgId={item.id} />
+                      <ProfilePicture imgId={item?.id} />
                     </div>
                     <div className="">
                       <h1 className="font-semibold capitalize">
-                        {item.username}
+                        {item?.username}
                       </h1>
-                      <p className="text-slate-600 text-sm ">{item.email}</p>
+                      <p className="text-slate-600 text-sm ">{item?.email}</p>
                     </div>
                   </div>
                   <div>
                     {friendList.includes(data.uid + item?.id) ||
-                    friendList.includes(item.id + data.uid) ? (
+                    friendList.includes(item?.id + data.uid) ? (
                       <button className="button_v_3">Friend</button>
                     ) : friendRequestList.includes(item.id + data.uid) ||
                       friendRequestList.includes(data.uid + item.id) ? (
