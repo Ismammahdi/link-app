@@ -4,15 +4,22 @@ import { BsEmojiLaughing } from "react-icons/bs";
 import { AiFillAudio } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import { getDatabase, onValue, push, ref, set } from "firebase/database";
+// import { getDatabase, onValue, push, ref, set } from "firebase/database";
 import { useEffect } from "react";
 import { GrGallery } from "react-icons/gr";
 
+// import {
+//   getStorage,
+//   ref as sref,
+//   uploadBytesResumable,
+//   getDownloadURL,
+// } from "firebase/storage";
+import { getDatabase, onValue, push, ref, set } from "firebase/database";
 import {
-  getStorage,
-  ref as sref,
-  uploadBytesResumable,
   getDownloadURL,
+  getStorage,
+  uploadBytesResumable,
+  ref as sref,
 } from "firebase/storage";
 
 const Chatting = () => {

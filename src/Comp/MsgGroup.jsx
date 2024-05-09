@@ -1,5 +1,7 @@
+import { getDatabase, onValue, ref } from "firebase/database";
 import { useState, useEffect } from "react";
-import { ref, onValue, getDatabase } from "firebase/database";
+// import { ref, onValue, getDatabase } from "firebase/database";
+
 import { useSelector } from "react-redux";
 
 const MsgGroup = () => {

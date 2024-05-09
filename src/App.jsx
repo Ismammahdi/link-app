@@ -1,5 +1,6 @@
 import "./App.css";
 import Registration from "./Pages/Registration";
+// import firebaseConfig from "./Comp/firebase.config";
 import firebaseConfig from "./Comp/firebase.config";
 import { Route, Routes } from "react-router-dom";
 import Login from "./Pages/login/Login";
