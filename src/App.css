@@ -1,0 +1,130 @@
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  @apply font-Poppins
+}
+.registration h1{
+ @apply text-primary text-5xl font-semibold text-center my-[20px] mt-9
+}
+
+.login_registration input{
+  @apply w-full my-[10px]  border border-primary outline-green-600 p-2  rounded-lg placeholder:text-green-600  
+}
+.registration h2{
+@apply bg-primary text-center text-4xl font-bold text-white py-[20px] rounded-lg mb-[30px]
+}
+.registration .login_registration{
+  @apply shadow-2xl p-3 rounded-lg
+}
+.registration .inputs{
+  @apply px-3
+}
+.button_v_1{
+  @apply  w-full cursor-pointer font-bold bg-primary text-white px-4 py-2 rounded-lg transition ease-in hover:bg-secondary
+}
+.registration .inputs p{
+  @apply text-red-500 font-Poppins font-semibold
+}
+
+.main_menu .img{
+  @apply w-[64px] h-[64px]  bg-gray-500 overflow-hidden rounded-full 
+} 
+.main_menu .menu{
+
+}
+.profile h2{
+  @apply text-2xl capitalize  font-Poppins font-medium text-white
+}
+.menu-items {
+  @apply flex gap-10 
+}
+.menu-items svg {
+  @apply text-4xl text-white
+}
+
+/* main content starts */
+.main-content {
+  @apply p-3 mt-0  mb-0 flex justify-between flex-wrap items-center;
+  /* Added margin-bottom */
+ 
+}
+.main-content .item{
+  @apply w-[31.5%] h-[200px] mb-5 shadow-lg  border border-gray-300 rounded-lg  pb-4 pl-4 pr-4 pt-0 overflow-y-scroll
+}
+.main-content .item .text h1{
+ @apply text-xl font-semibold font-Poppins
+}
+
+/* main content ends */
+
+
+.item_ismam .item{
+  @apply w-[31.5%] h-[200px] mb-5 shadow-lg  border border-gray-300 rounded-lg  pb-4 pl-4 pr-4 pt-0 overflow-y-scroll
+}
+.item_ismam .item .text h1{
+ @apply text-xl font-semibold font-Poppins
+}
+.search {
+  @apply p-4 mt-5 
+}
+.search input{
+  @apply w-[32.5%] rounded-full shadow-lg shadow-gray-400 outline-none  placeholder:text-gray-400 px-10 py-3
+}
+/* .main-content .item .info{
+  @apply sticky w-full bg-white
+} */
+
+/* group list start */
+.list{
+  @apply flex justify-between items-center mb-5
+}
+.list .img{
+  @apply w-[50px] h-[50px] rounded-full bg-yellow-500 overflow-hidden
+}
+
+.button_v_3{
+  @apply  w-full cursor-pointer font-medium bg-primary text-white px-2 py-1 rounded-lg transition ease-in hover:bg-secondary
+}
+.button_v_4{
+  @apply  w-full cursor-pointer font-semibold bg-fourth text-white px-2 py-1 rounded-lg transition ease-in hover:bg-secondary
+}
+.button_v_5{
+  @apply  w-full cursor-pointer font-semibold bg-green-500 text-white px-2 py-1 rounded-lg transition ease-in hover:bg-secondary
+}
+
+.item .title{
+  @apply flex justify-between z-10 w-full py-5 bg-white left-0 top-0 sticky
+
+}
+/* grouplist end */
+
+/*nav portfolioPhoto */
+.defaultPhoto {
+  @apply absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]
+}
+
+#navbar .overlay{
+  @apply absolute left-0 top-0 w-full h-full bg-black opacity-50 cursor-pointer
+}
+#navbar .overlay svg{
+  @apply absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-3xl
+}
+.modal{
+  @apply w-full h-full absolute left-0 top-0 bg-primary z-[999] flex justify-center items-center
+}
+.modal .profileImg{
+  @apply w-[50%]  p-3 rounded-lg bg-white
+}
+
+/* scrollbar starts */
+::-webkit-scrollbar{
+  @apply w-[5px]
+}
+::-webkit-scrollbar-thumb{
+  @apply bg-primary rounded-full
+}
+/* scrollbar ends */
